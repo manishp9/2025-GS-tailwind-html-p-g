@@ -1,0 +1,245 @@
+
+input:focus,
+input:focus-visible,
+input:focus-within,
+button:focus,
+button:focus-visible,
+button:focus-within,
+textarea:focus,
+textarea:focus-visible,
+textarea:focus-within {
+    outline: unset;
+    box-shadow: unset;
+}
+
+.is-sticky {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+    width: 100%;
+    /* Ensure full width */
+}
+
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    width: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.red-text {
+    color: #E51937;
+}
+
+.cream-text {
+    color: #F4A899;
+}
+
+.grey-text {
+    color: #959CA1;
+}
+
+.container {
+    margin: auto;
+    padding: 0 20px;
+}
+
+header.scrolled {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
+.benefit-expertise-section .cover-info{
+    backdrop-filter: blur(22px) !important;
+}
+.slider-items img {
+    filter: saturate(0);
+}
+
+.slider-items:hover img {
+    filter: saturate(1);
+}
+
+.slider-section .swiper-button-next:after,
+.slider-section .swiper-button-prev:after {
+    font-size: 25px;
+}
+
+.contact-form-inner.active label {
+    top: -11px;
+    font-size: 13px;
+    background: #ffffff;
+}
+
+.state-shape:hover {
+    fill: #D8D8D8;
+}
+
+.state-shape {
+    transition: all ease 0.2s;
+}
+
+.hovered-path {
+    fill: #D8D8D8 !important;
+}
+
+.accordion2.width .card {
+    flex-direction: row;
+    flex-grow: 0;
+    flex-shrink: 1;
+    min-width: min-content;
+}
+
+.card-body2 {
+    width: max-content !important;
+}
+
+.card-header2.collapsed {
+    display: flex !important;
+}
+
+.accordion.width .card .card-header:not(.collapsed) {
+    pointer-events: none;
+}
+
+.collapsing.width {
+    transition: width 0.35s ease;
+    height: auto;
+    width: 0;
+}
+
+.collapse {
+    visibility: visible !important;
+}
+
+.collapse:not(.show) {
+    display: none;
+}
+
+.tab-header-item:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    bottom: -2px;
+    left: 0;
+}
+
+.tab-header-item.active:before {
+    background: #E51937;
+}
+
+.tab-content-item.active {
+    display: flex !important;
+}
+
+.timeline-year:before {
+    content: "";
+    position: absolute;
+    width: 12px;
+    border-radius: 50%;
+    height: 12px;
+    top: 0;
+    left: 0;
+    background: black;
+}
+
+/* .timeline::before{
+        content: "";
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            top: 145px;
+            left: 0;
+            background: black;
+} */
+.tab-arrow-item.disabled svg path {
+    stroke: #868686 !important;
+}
+
+.nav-items-box li a,
+.footer-menu-items a {
+    padding-bottom: 8px;
+}
+.nav-items-box li a.active,
+.footer-menu-items a.active {
+    border-bottom: 2px solid #E51937;
+}
+
+.nav-items-box li a.active:hover,
+.footer-menu-items a.active:hover {
+    text-decoration: none;
+}
+
+.grab {
+    cursor: -webkit-grab;
+    cursor: grab;
+}
+
+.swiper-slide-active .timeline-year:before {
+    background: #E51937;
+}
+
+.protected-btn a:hover img,
+.benefit-btn a:hover img,
+.commit-btn a:hover img,
+.safety-btn a:hover img,
+.card-header2:hover img {
+    transform: translate(10px, 0);
+}
+.tab-arrow-item.disabled:hover {
+    transform: unset;
+        cursor: no-drop;
+}
+
+
+.heroSlider .slider__controls {
+    position: absolute;
+    bottom: 170px;
+    z-index: 1;
+    left: 0;
+    right: 0;
+}
+.heroSlider .slider__controls .swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
+    margin: 0;
+}
+.heroSlider .slider__controls .swiper-pagination-bullet:not(:last-child) {
+    margin-right: 20px;
+}
+.heroSlider .slider__controls .swiper-pagination-bullet.swiper-pagination-bullet-active {
+    background: #E51937;
+}
+.heroSlider .swiper-slide::after {
+    position: absolute;
+    content: "";
+    background: url(../images/hero-banner-shape.png) no-repeat center;
+    background-size: cover;
+    width: 870px;
+    height: 370px;
+    bottom: 0;
+    right: 0;
+}
+
+.swiper-pagination-bullet-active{
+    background: #E51937;
+}
+.proclaimed-section .swiper-pagination-bullet{
+    width: 16px;
+    height: 16px;
+    margin: 0 10px !important;
+}
+           @media (max-width: 768px) {
+            .proclaimed-section .swiper-pagination-bullet{
+    width: 12px;
+    height: 12px;
+    margin: 0 10px !important;
+}
+           }
